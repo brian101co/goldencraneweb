@@ -1,0 +1,165 @@
+
+body{
+  background-color: #fff4f0;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.fixed-top.scrolled {
+  background-color: #fff4f0 !important;
+  transition: background-color 1000ms linear;
+}
+
+.scroll-link {
+  position: relative;
+  bottom: 100px;
+}
+
+.text-cream {
+  color: #fff4f0;
+}
+
+.banner {
+  background-image: url(/imgs/banner-fotto-20.jpg);
+  background-position-y: center;
+  background-size: cover;
+  height: 700px;
+  padding-top: 250px;
+}
+
+.banner-2 {
+  background-image: url(/imgs/banner-fotto-20.jpg);
+  background-position-y: center;
+  background-size: cover;
+  height: 300px;
+}
+
+#testimonials {
+  height: 450px;
+}
+
+.btn-primary {
+  background-color: #81896a;
+  border-color: #81896a;
+  color: #212529;
+}
+
+.btn:active, .btn:focus, .btn-primary:focus, .btn-primary:active {
+    background-color: grey;
+    box-shadow: none;
+    border: none;
+    outline: none !important;
+}
+
+.img-thumbnail {
+  background-color: #fff4f0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.background-olive {
+  background-color: #81896a;
+}
+
+.modal-content {
+  background: #fff4f0;
+}
+
+.card {
+  background-color: #fff4f0;
+}
+
+.btn {
+  display: block;
+  max-width: fit-content;
+}
+
+.btn:hover {
+  background-color: grey;
+  border-color: grey;
+}
+
+.btn-unique:hover{
+  background: #81896a;
+}
+
+svg {
+  height: 100px;
+  width: 100px;
+}
+
+.card-link {
+  color: #81896a;
+}
+
+.card-link:hover {
+  color: grey;
+}
+
+.footer {
+  background-color: grey;
+}
+
+.footer-link:hover {
+  color: #fff4f0;
+  text-decoration: none;
+  border: none;
+}
+
+.brand{
+  width: 440px;
+}
+
+.modal-backdrop {
+  z-index: 1020;
+}
+
+@media(max-width: 1200px){
+  .brand {
+    width: 320px;
+  }
+}
+
+@media(max-width: 1100px){
+  .brand {
+    width: 210px;
+  }
+
+  .display-4 {
+    font-size: 40px;
+  }
+}
+
+@media(max-width: 992px){
+  .navbar {
+    background-color: #fff4f0;
+  }
+
+  .portfolio-banner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media(max-width: 576px){
+  .brand {
+    width: 150px;
+  }
+
+  .mx-5{
+    margin-left: 0!important;
+    margin-right: 0!important;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+  }
+
+  .px-5{
+  padding-left: 1rem!important;
+  padding-right: 1rem!important;
+  }
+}

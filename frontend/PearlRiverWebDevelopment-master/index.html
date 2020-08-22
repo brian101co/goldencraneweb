@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  <title>Pearl River Web Development | Home</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-expand-lg navbar-light px-5 fixed-top">
+  <div>
+    <a class="navbar-brand" href="#">
+      <img class="img-responsive brand" src="/imgs/PRWDlogo1.png" alt="Pearl River Web Development Logo">
+    </a>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" 8aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto" id="main-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="nav-services" href="#services">OUR SERVICES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="nav-portfolio" href="#portfolio">OUR PROJECTS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="nav-blog" href="#blog">OUR BLOG</a>
+      </li>
+
+<!-- This is the modal contact form -->
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="form34" class="form-control validate" placeholder="Your Name">
+          <!-- <label data-error="wrong" data-success="right" for="form34">Your name</label> -->
+        </div>
+
+        <div class="md-form mb-5">
+          <input type="email" id="form29" class="form-control validate" placeholder="Your Email">
+          <small class="text-muted">Note: We will never share your email with anyone.</small>
+        </div>
+
+        <div class="md-form mb-5">
+          <input type="text" id="form32" class="form-control validate" placeholder="Subject">
+        </div>
+
+        <div class="md-form">
+          <textarea type="text" id="form8" class="md-textarea form-control" rows="4" placeholder="Your Message"></textarea>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-unique" type="submit" value="send" id="submit" onclick="clickClose()">Send</button>
+      </div>
+      <script>
+        function clickClose() {
+          $('#modalContactForm').modal('toggle');
+        }
+      </script>
+    </div>
+  </div>
+</div>
+
+<li class="nav-item">
+  <a href="" class="nav-link" data-toggle="modal" data-target="#modalContactForm">CONTACT</a>
+</li>
+
+
+
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron banner text-center" id="home">
+  <div class="my-auto">
+    <h1 class="display-4">Expand to New Heights!</h1>
+    <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, numquam?</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg mx-auto" href="#" role="button">Learn more</a>
+    </p>
+  </div>
+</div>
+<div class="row pt-5 my-3">
+  <div class="col text-center">
+    <h6 class="text-muted">OUR PROMISE</h6>
+    <p>Our promise is... Lorem ipsum dolor sit amet.</p>
+  </div>
+</div>
+
+<div class="scroll-link" id="services"></div>
+<section>
+  <div class="row container justify-content-center mx-auto mt-5 pt-5">
+    <div class="col text-center">
+      <h6 class="text-muted">WHAT WE ARE GOOD AT</h6>
+      <h2>Our Services</h2>
+      <hr>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 flex-row d-flex justify-content-center mx-5 px-5 mt-5">
+    <div class="col pb-5">
+      <div class="container justify-content-center d-flex">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-card-heading" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+          <path fill-rule="evenodd"
+            d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+          <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z" />
+        </svg>
+      </div>
+      <h1><small>Website Design</small></h1>
+      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptas eveniet quam a
+        nesciunt, rerum in! Fugiat vero dolores non?</p>
+    </div>
+    <div class="col pb-5">
+      <div class="container justify-content-center d-flex">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-code-square" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+          <path fill-rule="evenodd"
+            d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z" />
+        </svg>
+      </div>
+      <h1><small>Website Development</small></h1>
+      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptas eveniet quam a
+        nesciunt, rerum in! Fugiat vero dolores non?</p>
+    </div>
+    <div class="col pb-5">
+      <div class="container justify-content-center d-flex">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+          <path fill-rule="evenodd"
+            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+        </svg>
+      </div>
+      <h1><small>Logo Design</small></h1>
+      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptas eveniet quam a
+        nesciunt, rerum in! Fugiat vero dolores non?</p>
+    </div>
+    <div class="col pb-5">
+      <div class="container justify-content-center d-flex">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-broadcast-pin" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 0 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707z" />
+          <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
+          <path fill-rule="evenodd" d="M8 8.5a.5.5 0 0 1 .5.5v6.5a.5.5 0 0 1-1 0V9a.5.5 0 0 1 .5-.5z" />
+        </svg>
+      </div>
+      <h1><small>Website Hosting</small></h1>
+      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptas eveniet quam a
+        nesciunt, rerum in! Fugiat vero dolores non?</p>
+    </div>
+    <div class="col pb-5">
+      <div class="container justify-content-center d-flex">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bar-chart-line" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5h-2v12h2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z" />
+          <path fill-rule="evenodd" d="M0 14.5a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z" />
+        </svg>
+      </div>
+      <h1><small>SEO</small></h1>
+      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptas eveniet quam a
+        nesciunt, rerum in! Fugiat vero dolores non?</p>
+    </div>
+    <div class="col pb-5">
+      <div class="container justify-content-center d-flex">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-patch-check" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M10.273 2.513l-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z" />
+          <path fill-rule="evenodd"
+            d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+        </svg>
+      </div>
+      <h1><small>Multimedia Management</small></h1>
+      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptas eveniet quam a
+        nesciunt, rerum in! Fugiat vero dolores non?</p>
+    </div>
+  </div>
+</section>
+<div class="scroll-link" id="portfolio"></div>
+<section class="background-olive pt-5">
+  <div class="row container justify-content-center mx-auto">
+    <div class="col text-center pt-3">
+      <h6 class="text-cream">OUR PORTFOLIO</h6>
+      <h2>Find Something You'll Like From Our Past Experiences</h2>
+      <hr>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 flex-row d-flex justify-content-center mx-5 px-5 pt-5">
+    <div class="col mb-5 d-inline-flex justify-content-center">
+      <div class="card" style="width: 100%;">
+        <img src="/imgs/Sample Portfolio Img.svg" class="card-img-top img-fluid" alt="Website 0">
+        <div class="card-body">
+          <h5 class="card-title">Website 0</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, vitae?
+          </p>
+          <a href="/projects.html" class="card-link">Click here to learn more about this project.</a>
+          <a href="#" class="btn btn-primary mt-3">Check Out Their Page</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-5 d-inline-flex justify-content-center">
+      <div class="card" style="width: 100%;">
+        <img src="/imgs/Sample Portfolio Img.svg" class="card-img-top" alt="Website 1">
+        <div class="card-body">
+          <h5 class="card-title">Website 1</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, vitae?
+          </p>
+          <a href="/projects.html" class="card-link">Click here to learn more about this project.</a>
+          <a href="#" class="btn btn-primary mt-3">Check Out Their Page</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-5 d-inline-flex justify-content-center">
+      <div class="card" style="width: 100%;">
+        <img src="/imgs/Sample Portfolio Img.svg" class="card-img-top img-fluid" alt="Website 2">
+        <div class="card-body">
+          <h5 class="card-title">Website 2</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, vitae?
+          </p>
+          <a href="/projects.html" class="card-link">Click here to learn more about this project.</a>
+          <a href="#" class="btn btn-primary mt-3">Check Out Their Page</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-5 d-inline-flex justify-content-center">
+      <div class="card" style="width: 100%;">
+        <img src="/imgs/Sample Portfolio Img.svg" class="card-img-top img-fluid" alt="Website 3">
+        <div class="card-body">
+          <h5 class="card-title">Website 3</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, vitae?
+          </p>
+          <a href="/projects.html" class="card-link">Click here to learn more about this project.</a>
+          <a href="#" class="btn btn-primary mt-3">Check Out Their Page</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="testimonials">
+  <div class="container d-flex pt-5 my-5">
+    <h2 class="mx-auto">Testimonials</h2>
+  </div>
+  <div id="carouselExampleSlidesOnly" class="carousel slide mt-3 container align-content-center" data-ride="carousel">
+    <hr>
+    <div class="carousel-inner pt-5">
+      <div class="carousel-item active">
+        <blockquote class="blockquote">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+      </div>
+      <div class="carousel-item">
+        <blockquote class="blockquote">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+      </div>
+      <div class="carousel-item">
+        <blockquote class="blockquote">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="scroll-link" id="blog"></div>
+<section class="background-olive pt-3">
+  <div class="row container justify-content-center mx-auto mt-5">
+    <div class="col text-center">
+      <h6 class="text-cream">OUR BLOG</h6>
+      <h2>Below We Share Stories of Our Expertise</h2>
+      <hr>
+    </div>
+  </div>
+  <div class="row py-3 mx-5 px-5  row-cols-1 row-cols-md-2 row-cols-lg-5 justify-content-center d-flex">
+    <div class="col mx-3 mb-5">
+      <div class="card" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">How We Desiged Our Logo</h5>
+          <h6 class="card-subtitle mb-2 text-muted">GIMP Tutorial</h6>
+          <p class="card-text">In this tutorial, I go over some of the concepts that we used in our logo design. I will cover how I used layering, brush effects, and more to achieve my goal.
+          </p>
+          <p class="card-text">Author, Stewart Inman
+          </p>
+          <a href="/blog.html" class="card-link">Read More Here...</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 5 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col mx-3 mb-5">
+      <div class="card" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">How We Desiged Our Logo</h5>
+          <h6 class="card-subtitle mb-2 text-muted">GIMP Tutorial</h6>
+          <p class="card-text">In this tutorial, I go over some of the concepts that we used in our logo design. I will cover
+            how I used layering, brush effects, and more to achieve my goal.
+          </p>
+          <p class="card-text">Author, Stewart Inman
+          </p>
+          <a href="/blog.html" class="card-link">Read More Here...</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 5 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col mx-3 mb-5">
+      <div class="card" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">How We Desiged Our Logo</h5>
+          <h6 class="card-subtitle mb-2 text-muted">GIMP Tutorial</h6>
+          <p class="card-text">In this tutorial, I go over some of the concepts that we used in our logo design. I will cover
+            how I used layering, brush effects, and more to achieve my goal.
+          </p>
+          <p class="card-text">Author, Stewart Inman
+          </p>
+          <a href="/blog.html" class="card-link">Read More Here...</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 5 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col mx-3 mb-5">
+      <div class="card" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">How We Desiged Our Logo</h5>
+          <h6 class="card-subtitle mb-2 text-muted">GIMP Tutorial</h6>
+          <p class="card-text">In this tutorial, I go over some of the concepts that we used in our logo design. I will cover
+            how I used layering, brush effects, and more to achieve my goal.
+          </p>
+          <p class="card-text">Author, Stewart Inman
+          </p>
+          <a href="/blog.html" class="card-link">Read More Here...</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 5 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="row d-flex justify-content-center my-5 py-5"></div>
+    <div class="col text-center pb-5 mb-5">
+      <div class="container mb-5 pb-5">
+        <h1>Grow Your Business!</h1>
+        <p class="text-muted container">There is no time like the present to move your business online. We encourage you to reach out and have a conversation with us about how we can serve you to bring your business to knew heights.
+        </p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg mx-auto" href="#" role="button">Start Today</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container py-3 mt-auto d-md-flex justify-content-around">
+    <h6 class="text-cream d-flex justify-content-center"><small>Designed and Developed by Us</small></h6>
+    <h6 class="text-cream d-flex justify-content-center"><small>&copy; Copyright 2020</small></h6>
+    <a href="#" class="footer-link d-flex justify-content-center"><h6 class="text-cream"><small>Sitemap</small></h6></a>
+    <div class="d-flex justify-content-center"><h6><small><a href="#" class="text-cream footer-link">Terms of Use</a> <span class="text-cream">| </span><a href="#" class="text-cream footer-link">Privacy Policy</a></small></h6></div>
+  </div>
+</footer>
+<script src="/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="/navbar-scroll.js"></script>
+<script src="/scroll-to-section.js"></script>
+</body>
+</html>

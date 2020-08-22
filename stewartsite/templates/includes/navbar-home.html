@@ -1,0 +1,76 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-light px-5 fixed-top">
+    <div>
+      <a class="navbar-brand" href="#">
+        <img class="img-responsive brand" src="{% static 'imgs/PRWDlogo1.png' %}" alt="Pearl River Web Development Logo">
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" 8aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto" id="main-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-services" href="#services">OUR SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-portfolio" href="#portfolio">OUR PROJECTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-blog" href="#blog">OUR BLOG</a>
+        </li>
+  
+  <!-- This is the modal contact form -->
+  <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <input type="text" id="form34" class="form-control validate" placeholder="Your Name">
+            <!-- <label data-error="wrong" data-success="right" for="form34">Your name</label> -->
+          </div>
+  
+          <div class="md-form mb-5">
+            <input type="email" id="form29" class="form-control validate" placeholder="Your Email">
+            <small class="text-muted">Note: We will never share your email with anyone.</small>
+          </div>
+  
+          <div class="md-form mb-5">
+            <input type="text" id="form32" class="form-control validate" placeholder="Subject">
+          </div>
+  
+          <div class="md-form">
+            <textarea type="text" id="form8" class="md-textarea form-control" rows="4" placeholder="Your Message"></textarea>
+          </div>
+  
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-unique" type="submit" value="send" id="submit" onclick="clickClose()">Send</button>
+        </div>
+        <script>
+          function clickClose() {
+            $('#modalContactForm').modal('toggle');
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+  
+  <li class="nav-item">
+    <a href="" class="nav-link" data-toggle="modal" data-target="#modalContactForm">CONTACT</a>
+  </li>
+      </ul>
+    </div>
+  </nav>

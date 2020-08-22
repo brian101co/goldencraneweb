@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Pearl River Web Development | Contact</title>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-expand-lg navbar-light px-5 fixed-top">
+  <div>
+    <a class="navbar-brand" href="/index.html">
+      <img class="img-responsive brand" src="/imgs/PRWDlogo1.png" alt="Pearl River Web Development Logo">
+    </a>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" 8aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto" id="main-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html">HOME</a>
+      </li>
+<!-- This is the modal contact form -->
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="form34" class="form-control validate" placeholder="Your Name">
+          <!-- <label data-error="wrong" data-success="right" for="form34">Your name</label> -->
+        </div>
+
+        <div class="md-form mb-5">
+          <input type="email" id="form29" class="form-control validate" placeholder="Your Email">
+          <small class="text-muted">Note: We will never share your email with anyone.</small>
+        </div>
+
+        <div class="md-form mb-5">
+          <input type="text" id="form32" class="form-control validate" placeholder="Subject">
+        </div>
+
+        <div class="md-form">
+          <textarea type="text" id="form8" class="md-textarea form-control" rows="4"
+            placeholder="Your Message"></textarea>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-unique" type="submit" value="send" id="submit" onclick="clickClose()">Send</button>
+      </div>
+      <script>
+        function clickClose() {
+          $('#modalContactForm').modal('toggle');
+        }
+      </script>
+    </div>
+  </div>
+</div>
+
+<li class="nav-item">
+  <a href="" class="nav-link" data-toggle="modal" data-target="#modalContactForm">CONTACT</a>
+</li>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron banner-2" id="home"></div>
+<section class="d-flex portfolio-banner px-5">
+  <img src="/imgs/Sample Portfolio Img.svg" alt="Website 0" class="img-thumbnail">
+  <div class="container my-auto mx-5 px-5">
+    <h1>Website 0</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita iste quo atque minima delectus tempore corrupti aperiam quaerat voluptatum, odit accusamus. Quia placeat itaque perferendis?</p>
+    <hr>
+    <h4>Services Provided:</h4>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <a href="#" class="btn btn-primary mt-3">Visit Their Website</a>
+  </div>
+</section>
+<div class="container my-5"><hr></div>
+<section class="mb-5 pb-5 px-5">
+  <div class="container">
+    <h4>Project Details</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, omnis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, suscipit et!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi possimus, alias reprehenderit sit voluptatem dignissimos?</p> 
+    <blockquote class="blockquote my-5">
+    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+  </blockquote> 
+  </div>
+
+</section>
+<section class="background-olive pt-5">
+  <div class="row container justify-content-center mx-auto">
+    <div class="col text-center pt-3">
+      <h6 class="text-cream">OUR PORTFOLIO</h6>
+      <h2>Check Out More of Our Projects</h2>
+      <hr>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 flex-row d-flex justify-content-center mx-5 px-5 pt-5">
+    <div class="col mb-5 d-inline-flex justify-content-center">
+      <div class="card" style="width: 100%;">
+        <img src="/imgs/Sample Portfolio Img.svg" class="card-img-top img-fluid" alt="Website 0">
+        <div class="card-body">
+          <h5 class="card-title">Website 0</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, vitae?
+          </p>
+          <a href="/projects.html" class="card-link">Click here to learn more about this project.</a>
+          <a href="#" class="btn btn-primary mt-3">Check Out Their Page</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-5 d-inline-flex justify-content-center">
+      <div class="card" style="width: 100%;">
+        <img src="/imgs/Sample Portfolio Img.svg" class="card-img-top" alt="Website 1">
+        <div class="card-body">
+          <h5 class="card-title">Website 1</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, vitae?
+          </p>
+          <a href="/projects.html" class="card-link">Click here to learn more about this project.</a>
+          <a href="#" class="btn btn-primary mt-3">Check Out Their Page</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-5 d-inline-flex justify-content-center">
+      <div class="card" style="width: 100%;">
+        <img src="/imgs/Sample Portfolio Img.svg" class="card-img-top img-fluid" alt="Website 2">
+        <div class="card-body">
+          <h5 class="card-title">Website 2</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, vitae?
+          </p>
+          <a href="/projects.html" class="card-link">Click here to learn more about this project.</a>
+          <a href="#" class="btn btn-primary mt-3">Check Out Their Page</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-5 d-inline-flex justify-content-center">
+      <div class="card" style="width: 100%;">
+        <img src="/imgs/Sample Portfolio Img.svg" class="card-img-top img-fluid" alt="Website 3">
+        <div class="card-body">
+          <h5 class="card-title">Website 3</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, vitae?
+          </p>
+          <a href="/projects.html" class="card-link">Click here to learn more about this project.</a>
+          <a href="#" class="btn btn-primary mt-3">Check Out Their Page</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="row d-flex justify-content-center my-5 py-5"></div>
+  <div class="col text-center pb-5 mb-5">
+    <div class="container mb-5 pb-5">
+      <h1>Grow Your Business!</h1>
+      <p class="text-muted container">There is no time like the present to move your business online. We encourage you
+        to reach out and have a conversation with us about how we can serve you to bring your business to knew heights.
+      </p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg mx-auto" href="#" role="button">Start Today</a>
+      </p>
+    </div>
+  </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container py-3 mt-auto d-md-flex justify-content-around">
+    <h6 class="text-cream d-flex justify-content-center"><small>Designed and Developed by Us</small></h6>
+    <h6 class="text-cream d-flex justify-content-center"><small>&copy; Copyright 2020</small></h6>
+    <a href="#" class="footer-link d-flex justify-content-center">
+      <h6 class="text-cream"><small>Sitemap</small></h6>
+    </a>
+    <div class="d-flex justify-content-center">
+      <h6><small><a href="#" class="text-cream footer-link">Terms of Use</a> <span class="text-cream">| </span><a
+            href="#" class="text-cream footer-link">Privacy Policy</a></small></h6>
+    </div>
+  </div>
+</footer>
+<script src="/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="/navbar-scroll.js"></script>
+</body>
+</html>

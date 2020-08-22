@@ -1,0 +1,7 @@
+{% load wagtailimages_tags %}
+<figure class="d-flex flex-column align-items-center">
+    {% image self.image original as img %}
+    <img src="{{ img.url }}" alt="{{ img.alt }}"
+    class="figure-img img-fluid rounded w-50">
+    <figcaption class="figcaption text-muted">{{ self.title }}</figcaption>
+</figure>
